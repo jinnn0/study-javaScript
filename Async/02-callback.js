@@ -41,6 +41,28 @@ function asynchronousCallback(callback, timeout) {
 asynchronousCallback(() => console.log('In asynchronous callback'), 2000);
 
 /**
+ * Callback example
+ */
+const users = ['John', 'Sarah', 'David', 'Kim'];
+
+function getUsers() {
+  setTimeout(() => {
+    users.forEach((user) => {
+      console.log(user);
+    });
+  }, 1000);
+}
+
+function createUser(user, callback) {
+  setTimeout(() => {
+    users.push(user);
+    callback();
+  }, 2000);
+}
+
+createUser('Flora', getUsers);
+
+/**
  * Callback Hell
  * What are the problems with callback hell ?
  * 1. Hard to follow
