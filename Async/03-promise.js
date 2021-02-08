@@ -35,7 +35,6 @@ promise //
 /**
  * Error handling
  */
-
 const writeHTML = () =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -117,7 +116,6 @@ createUser('Flora')
 /**
  * Callback to Promise 02
  */
-
 // using callback
 class UserStorage {
   loginUser(id, password, onSuccess, onError) {
