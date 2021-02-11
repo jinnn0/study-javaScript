@@ -1,2 +1,1 @@
-# Study-javaScript
-Study JavaScript fundamentals 
+Study JavaScript fundamentals.
