@@ -80,7 +80,7 @@ console.log('output: ', stringConcat([1, 2, 3, 4])); // "1234"
 // prettier-ignore
 const fruits = ['banana','banana','kiwi','kiwi','Blueberries','Strawberry','banana','Pear','Blueberries','Strawberry','banana','van','banana','kiwi'];
 
-const reduce1 = fruits.reduce((object, current) => {
+const reduce2 = fruits.reduce((object, current) => {
   if (!object[current]) {
     object[current] = 0;
   }
@@ -89,11 +89,11 @@ const reduce1 = fruits.reduce((object, current) => {
   return object;
 }, {});
 
-console.log(reduce1); // {banana: 5, kiwi: 3, Blueberries: 2, Strawberry: 2, Pear: 1, …}
+console.log(reduce2); // {banana: 5, kiwi: 3, Blueberries: 2, Strawberry: 2, Pear: 1, …}
 
 // 03
-const reduce = students.reduce((prev, current) => prev + current.score, 0);
-console.log(reduce / students.length); // "Compute students's average score"
+const reduce3 = students.reduce((prev, current) => prev + current.score, 0);
+console.log(reduce3 / students.length); // "Compute students's average score"
 
 /**
  * reduceRight : same as reduce but from 'right to left'
