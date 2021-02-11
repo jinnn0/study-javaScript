@@ -12,11 +12,11 @@ class Student {
 }
 
 const students = [
-  new Student('A', 29, true, 45),
-  new Student('B', 28, false, 80),
-  new Student('C', 30, true, 90),
-  new Student('D', 40, false, 66),
-  new Student('E', 18, true, 88)
+  new Student('Blake, William', 29, true, 45),
+  new Student('Jean, Lynne', 28, false, 80),
+  new Student('Charlie, Jaimie', 30, true, 90),
+  new Student('Lauren, Carlene', 40, false, 66),
+  new Student('Jeffrey, Blake', 18, true, 88)
 ];
 
 /**
@@ -62,10 +62,38 @@ console.log(map);
 
 /**
  * reduce : returns a single accumulated output value
- * "Compute students's average score"
+ * Accumulate all the values from a reducer function in an array into a single value
  */
+
+// 01
+function stringConcat(arr) {
+  return arr.reduce((acc, current) => {
+    let toString = current.toString();
+
+    return (acc += toString);
+  }, '');
+}
+
+console.log('output: ', stringConcat([1, 2, 3, 4])); // "1234"
+
+// 02
+// prettier-ignore
+const fruits = ['banana','banana','kiwi','kiwi','Blueberries','Strawberry','banana','Pear','Blueberries','Strawberry','banana','van','banana','kiwi'];
+
+const reduce1 = fruits.reduce((object, current) => {
+  if (!object[current]) {
+    object[current] = 0;
+  }
+  object[current]++;
+
+  return object;
+}, {});
+
+console.log(reduce1); // {banana: 5, kiwi: 3, Blueberries: 2, Strawberry: 2, Pear: 1, …}
+
+// 03
 const reduce = students.reduce((prev, current) => prev + current.score, 0);
-console.log(reduce / students.length);
+console.log(reduce / students.length); // "Compute students's average score"
 
 /**
  * reduceRight : same as reduce but from 'right to left'
@@ -74,11 +102,31 @@ const reduceRight = students.reduceRight((prev, current) => prev + current.score
 console.log(reduceRight / students.length);
 
 /**
- * sort : returns sorted original array
- * "Sort the scores in ascending order" -> [20, 45, 66, 88, 90]
+ * sort : returns the sorted array
  */
+
+// 01
+const array = [30, 20, 70, 40, 10];
+array.sort((a, b) => {
+  // 1. (a - b) < 0 -> a comes first
+  // 2. (a - b) == 0 -> no change
+  // 3. (a - b) > 0 -> b comes first
+
+  return a - b; // [10, 20, 30, 40, 70]
+});
+
+// 02 - "Sort the scores in ascending order and create a new array like this -> [20, 45, 66, 88, 90]"
 const sort = students.map((student) => student.score).sort((a, b) => a - b); // ascending order
 const sort = students.map((student) => student.score).sort((a, b) => b - a); // descending order
+
+// 03 - sort by sutdent's last name
+const sort2 = students.sort((a, b) => {
+  const [a_first, a_last] = a.name.split(', ');
+  const [b_first, b_last] = b.name.split(', ');
+
+  return a_last > b_last ? 1 : -1;
+});
+console.log(sort2);
 
 /**
  * from : returns a new, shallow copied Array instance from an array-like or iterable object
