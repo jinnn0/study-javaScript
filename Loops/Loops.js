@@ -29,7 +29,7 @@ for (key in song) {
 }
 
 /*
- * For of loop
+ * For of loop (added in ES6)
  * Loops through the values of an iterable object including Array, Map, Set and more
  */
 const array = [3, 5, 7];
