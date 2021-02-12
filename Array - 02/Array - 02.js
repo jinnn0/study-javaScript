@@ -20,14 +20,14 @@ const students = [
 ];
 
 /**
- * find : returns the fisrt item that matches the condition
+ * find (added in ES6) : returns the fisrt item that matches the condition
  * "Find a student with the score 90"
  */
 const find = students.find((student) => student.score >= 90);
 console.log(find);
 
 /**
- * findIndex : returns the index of first item that matches the condition
+ * findIndex (added in ES6): returns the index of first item that matches the condition
  */
 const findIndex = students.findIndex((student) => student.score >= 90);
 console.log(findIndex);
