@@ -11,7 +11,7 @@
   are moved to the top of their scope (but not the values assinged to it)
 
 * The "var" declarations are moved up to the top and automatically and set to "undefined"
-* Named functions are moved up to the top of their scope therefore available anywere in your code
+* Traditional named functions are moved up to the top of their scope therefore available anywere in your code
 
 * "let" / "const" variables and "class" are hoisted but remain unintialized
 * Annonymous functions and arrow functions are not hoisted
