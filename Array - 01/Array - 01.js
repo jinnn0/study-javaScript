@@ -50,7 +50,10 @@ users.pop(); // remove from the end
 users.unshift('Mike'); // add from the start
 users.shift(); // remove from the start
 
-// combine two arrays
+/**
+ * Combine two arrays
+ * concat
+ */
 const users_2 = ['user1', 'user2', 'user3'];
 const combinedUsers = users.concat(users_2);
 
@@ -88,3 +91,19 @@ users.splice(2, 1, 'A', 'B'); // start, deleteCount, itemToAdd
  */
 console.log(users.reverse());
 console.log(users);
+
+/**
+ * Array use case 01 : Rotate elements in an array
+ */
+const array = [3, 8, 9, 7, 6]; // -> [9, 7, 6, 3, 8]
+const rotation = 3;
+
+function rotateArray(array, rotation) {
+  for (let i = 0; i < rotation; i++) {
+    console.log(i);
+    array.unshift(array.pop());
+  }
+  return array;
+}
+
+rotateArray(array, rotation);
