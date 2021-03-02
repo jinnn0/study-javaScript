@@ -21,9 +21,7 @@ const four = (a, b) => {
 };
 
 // 05 : explicit return for single line
-const five = (a) => {
-  return a;
-};
+const five = (a) => { return a };
 
 // 05 : return an object with parentheses
 const five = () => ({ name: 'Mike' });
