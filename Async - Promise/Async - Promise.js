@@ -2,9 +2,11 @@
  * Promise
 
  * Promise introduced with ES6 (2015) is a JavaScript object for asynchronous operation
-
- * State : pending -> fulfilled or rejected
+ * State
+   * pending -> fulfilled or rejected
  * Producer vs Consumer
+ * Error handling
+ * Transform callback functions to Promises
  */
 
 /**
@@ -85,7 +87,7 @@ function getUsers() {
   }, 1000);
 }
 
-// using callback
+// callback
 function createUser(user, callback) {
   setTimeout(() => {
     users.push(user);
@@ -95,7 +97,7 @@ function createUser(user, callback) {
 
 createUser('Flora', getUsers);
 
-// using Promise
+// Promise
 function createUser(user) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -116,7 +118,7 @@ createUser('Flora')
 /**
  * Callback to Promise 02
  */
-// using callback
+// callback
 class UserStorage {
   loginUser(id, password, onSuccess, onError) {
     setTimeout(() => {
@@ -155,7 +157,7 @@ userStorage.loginUser(
   (err) => console.log(err)
 );
 
-// using Promise
+// Promise
 class UserStorage {
   loginUser(id, password) {
     return new Promise((resolve, reject) => {
