@@ -97,7 +97,7 @@ function createUser(user, callback) {
 
 createUser('Flora', getUsers);
 
-// Promise
+// promise
 function createUser(user) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -157,7 +157,7 @@ userStorage.loginUser(
   (err) => console.log(err)
 );
 
-// Promise
+// promise
 class UserStorage {
   loginUser(id, password) {
     return new Promise((resolve, reject) => {
