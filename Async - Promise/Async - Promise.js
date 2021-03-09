@@ -12,6 +12,23 @@
 /**
  * Producer
  */
+// 01 - Plain syntax
+const serverRequest = new Promise((resolve, reject) => {
+  //
+});
+
+// 02 - Use "resolve" and "reject" to add a way to complete the promise
+const serverRequest = new Promise((resolve, reject) => {
+  let responseFromServer = true;
+
+  if (responseFromServer) {
+    resolve('Promise has been fulfilled, we got the data'); // the argument of resolve and reject can be anything
+  } else {
+    reject('Promise has been rejected, data not received');
+  }
+});
+
+// 03
 const promise = new Promise((resolve, reject) => {
   // Do some heavy work (network, read files)
   console.log('Do something'); // When new Promise is created, the executor runs automatically
@@ -29,6 +46,21 @@ const promise = new Promise((resolve, reject) => {
 /**
  * Conumser : then, catch, finally
  */
+// 01 - then
+serverRequest.then((response) => {
+  // response is the argument given to the "resolve" method
+});
+
+// 02 - catch
+serverRequest
+  .then((response) => {
+    // response is the argument given to the "resolve" method
+  })
+  .catch((error) => {
+    // error is the argument given to the "reject" method
+  });
+
+// 03
 promise //
   .then((res) => console.log(res)) // Do this when it succeed
   .catch((err) => console.log(err)) // Do this when it fails
