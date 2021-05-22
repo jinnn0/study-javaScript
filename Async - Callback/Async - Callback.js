@@ -40,9 +40,9 @@ function asynchronousCallback(callback, timeout) {
 
 asynchronousCallback(() => console.log('In asynchronous callback'), 2000);
 
-/**
- * Callback example
- */
+
+
+// Callback example
 const users = ['John', 'Sarah', 'David', 'Kim'];
 
 function getUsers() {
