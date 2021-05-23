@@ -129,7 +129,7 @@ const sort2 = students.sort((a, b) => {
 console.log(sort2);
 
 /**
- * 24. from : returns a new, shallow copied Array instance from an array-like or iterable object
+ * 24. Array.from : returns a new, shallow copied Array instance from an array-like or iterable object
  */
 const from = Array.from('student');
 console.log(from); // ["s", "t", "u", "d", "e", "n", "t", "s"]
