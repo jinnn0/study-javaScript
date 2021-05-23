@@ -131,8 +131,18 @@ console.log(sort2);
 /**
  * 24. from : returns a new, shallow copied Array instance from an array-like or iterable object
  */
-
 const from = Array.from('student');
 console.log(from); // ["s", "t", "u", "d", "e", "n", "t", "s"]
 
 console.log(Array.from([1, 2, 3], (x) => x + x)); // [2, 4, 6]
+
+/**
+ * 25. fill : fills the specified elements in an array
+ */
+const fillEmptyArray = new Array(3).fill('array');
+
+// 26. valueOf()
+// 27. keys()
+// 28. copyWithin()
+// 29. entries()
+// 30. isArray()
