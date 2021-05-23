@@ -13,7 +13,7 @@ console.log(one.length);
 /**
  * Joins two or more strings
  */
-// 01. concat()
+// 01. concat() - returns a new joined strings
 console.log(one.concat(two, three)); // learning 20 javascript string methods searches: ynd, and, end, tend, owedThere is a banana and an orange,
 
 /**
@@ -66,13 +66,13 @@ console.log(one.startsWith('learning')); // true
 /**
  * Extracting parts of the string
  */
-// 12. slice (startPos, endPos - not including)
+// 12. slice (startPos, endPos - not including) - returns a new string
 console.log(one.slice(1, 3)); // ear
 
-// 13. substr (startPos, number of characters to include)
+// 13. substr (startPos, number of characters to include) - returns a extracted string
 console.log(one.substr(1, 3)); // // ear
 
-// 14. substring (startPos, endPos)
+// 14. substring (startPos, endPos) - returns a extracted string
 console.log(one.substring(1, 3)); // ear
 
 /**
@@ -82,20 +82,20 @@ console.log(one.substring(1, 3)); // ear
 console.log(one.split(' ')); // ["learning", "20", "javascript", "string", "methods"]
 console.log(two.split(',')); // [" searches: ynd", " and", " end", " tend", " owed "]
 
-// 16. trim() - Removes whitespace from both ends of a string
+// 16. trim() - returns a new string with whitespace from both ends of a string removed
 console.log(two.trim());
 
-// 17. replace()
+// 17. replace() - returns s new string with value replaced
 console.log(three.replace('an', 'oo')); // only the first occurrence => There is a booana and an orange,
 console.log(three.replace(/an/g, 'oo')); // all occurrences => There is a booooa ood oo orooge,
 
-// 18. repeat()
+// 18. repeat() - returns a new string
 console.log(four.repeat(3)); // HELLOHELLOHELLO
 
-// 19. toUpperCase() - doesn't change the original string
+// 19. toUpperCase() - returns a new string
 console.log(three.toUpperCase()); // THERE IS A BANANA AND AN ORANGE,
 
-// 20. toLowerCase() - doesn't change the original string
+// 20. toLowerCase() - returns a new string
 console.log(four.toLocaleLowerCase()); // hello
 
 // 21. toString()
