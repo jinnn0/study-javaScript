@@ -141,6 +141,45 @@ console.log(Array.from([1, 2, 3], (x) => x + x)); // [2, 4, 6]
  */
 const fillEmptyArray = new Array(3).fill('array');
 
+/**
+ * Simplified list!
+ */
+// 01. forEach()
+
+// 02. push() : push item to the end
+// 03. pop () : remove item from the end
+// 04. unshift() : push item to the start
+// 05. shift() : remove item from the start
+
+// 06. concat() : returns a new joined array, joins two or more
+
+// 07. indexOf() : returns an index of a first occurence
+// 08. lastIndexOf() : returns an index of a last occurence
+// 09. includes() : does it includes ? true / false
+
+// 10. toString() : returns a string with all the array values, separated by commas
+// 11. join() : returns a string converted from an array
+
+// 12. slice() : returns a new array with a selected elements
+// 13. splice() : adds/removes items to/from an array, returns the removed items, (startPos, howManyToRemove, item1ToAdd, item2ToAdd)
+
+// 14. reverse() : reverse the order of the elements in an original array
+
+// Using test
+// 15. find() : returns the value of the first element that pass a test
+// 16. findIndex() : returns the index of the first element that pass a test
+// 17. some() : checks if any of the element pass a test
+// 18. every() : checks if every element pass a test
+// 19. filter() : returns a new array with element that pass a test
+
+// 20. map() : returns a new array with the result of callback function
+// 21. reduce() : returns the single value accumulated from an array, executes the callback for each value of an array, left to right
+// 22. reduceRight() : right to left
+// 23. sort()
+
+// 24. Array.from() : returns a new, shallow copied Array instance from an array-like or iterable object
+// 25. fill() : fills the specified elements in an array
+
 // 26. valueOf()
 // 27. keys()
 // 28. copyWithin()
