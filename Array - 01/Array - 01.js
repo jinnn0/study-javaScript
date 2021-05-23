@@ -28,7 +28,7 @@ console.log(fruits[users.length - 1]); // last element in the list
 
 /**
  * Looping over an array
- * for loop / for of loop / forEach
+ * for loop / for of loop / 01. forEach
  */
 for (let i = 0; i < users.length; i++) {
   console.log(users[i]);
@@ -42,7 +42,7 @@ users.forEach((user, index) => console.log(user, index));
 
 /**
  * Add, delete
- * push, pop / unshift, shift
+ * 02 - 05 : push, pop / unshift, shift
  * unshift and shift are much slower than push, pop, since they need to re-arrange the whole list from the start
  */
 users.push('Jane'); // add from the end
@@ -52,7 +52,7 @@ users.shift(); // remove from the start
 
 /**
  * Combine two arrays
- * concat
+ * 06. concat
  */
 const users_2 = ['user1', 'user2', 'user3'];
 const combinedUsers = users.concat(users_2);
@@ -60,7 +60,7 @@ console.log(combinedUsers); // ["Wes", "Flora", "Apple", "Mango", "Flora", "Case
 
 /**
  * Searching through an array
- * indexOf / lastIndexOf / includes
+ * 07 - 09 : indexOf / lastIndexOf / includes
  */
 console.log(users.indexOf('C')); // returns -1 if the item doesn't exist
 console.log(users.indexOf('Flora')); // retuns the index of first item it finds
@@ -69,7 +69,7 @@ console.log(users.includes('Wes')); // true
 
 /**
  * Return a string out of an array
- * join / toString
+ * 10 - 11 : join / toString
  */
 console.log(users.toString()); // Wes,Flora,Apple,Mango,Flora,Casey
 console.log(users.join()); // Wes,Flora,Apple,Mango,Flora,Casey
@@ -77,18 +77,18 @@ console.log(users.join('')); // WesFloraAppleMangoFloraCasey
 console.log(users.join('//')); // Wes//Flora//Apple//Mango//Flora//Casey
 
 /**
- * slice : returns a new array with portion of original array
+ * 12. slice : returns a new array with portion of original array
  */
 users.slice(1, 4); // start, end (not included)
 
 /**
- * splice : changes the content of an original array
+ * 13. splice : changes the content of an original array
  */
 users.splice(2, 1);
 users.splice(2, 1, 'A', 'B'); // start, deleteCount, itemToAdd
 
 /**
- * reverse : reverse an original array
+ * 14. reverse : reverse an original array
  */
 console.log(users.reverse());
 console.log(users);

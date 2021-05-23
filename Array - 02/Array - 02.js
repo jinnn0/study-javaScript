@@ -20,48 +20,48 @@ const students = [
 ];
 
 /**
- * find (added in ES6) : returns the fisrt item that matches the condition
+ * 15. find (added in ES6) : returns the fisrt item that matches the condition
  * "Find a student with the score 90"
  */
 const find = students.find((student) => student.score >= 90);
-console.log(find);
+console.log(find); // Student {name: "Charlie, Jaimie", age: 30, enrolled: true, score: 90}
 
 /**
- * findIndex (added in ES6): returns the index of first item that matches the condition
+ * 16. findIndex (added in ES6): returns the index of first item that matches the condition
  */
 const findIndex = students.findIndex((student) => student.score >= 90);
-console.log(findIndex);
+console.log(findIndex); // 2
 
 /**
- * some : checks whether at least one element passes the condition
+ * 17. some : checks whether at least one element passes the condition
  * "Check if there is a student with the score lower than 50"
  */
 const some = students.some((student) => student.score < 50);
 console.log(some); // true
 
 /**
- * every : checks whether all elements passe the condition
+ * 18. every : checks whether all elements passe the condition
  * "Check if scores of all student is lower than 50"
  */
 const every = students.every((student) => student.score < 50);
 console.log(every); // false
 
 /**
- * filter : creates a new array with elements that matches the condition
+ * 19. filter : creates a new array with elements that matches the condition
  * "Make an array of enrolled students"
  */
 const filter = students.filter((student) => student.enrolled);
-console.log(filter);
+console.log(filter); // [Student(Blake), Student(Charlie), Student(Jeffrey)]
 
 /**
- * map : creates a new array with the result of calling a callback
+ * 20. map : creates a new array with the result of calling a callback
  * "Make an array containing only the students' scores"
  */
 const map = students.map((student) => student.score);
-console.log(map);
+console.log(map); // [45, 80, 90, 66, 88]
 
 /**
- * reduce : returns a single accumulated output value
+ * 21. reduce : returns a single accumulated output value
  * Accumulate all the values from a reducer function in an array into a single value
  */
 
@@ -96,13 +96,13 @@ const reduce3 = students.reduce((prev, current) => prev + current.score, 0);
 console.log(reduce3 / students.length); // "Compute students's average score"
 
 /**
- * reduceRight : same as reduce but from 'right to left'
+ * 22. reduceRight : same as reduce but from 'right to left'
  */
 const reduceRight = students.reduceRight((prev, current) => prev + current.score, 0);
 console.log(reduceRight / students.length);
 
 /**
- * sort : returns the sorted array
+ * 23. sort : returns the sorted array
  */
 
 // 01
@@ -129,7 +129,7 @@ const sort2 = students.sort((a, b) => {
 console.log(sort2);
 
 /**
- * from : returns a new, shallow copied Array instance from an array-like or iterable object
+ * 24. from : returns a new, shallow copied Array instance from an array-like or iterable object
  */
 
 const from = Array.from('student');
