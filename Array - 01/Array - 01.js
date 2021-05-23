@@ -42,7 +42,7 @@ users.forEach((user, index) => console.log(user, index));
 
 /**
  * Add, delete
- * push, pop / unshift, shift / splice / concat
+ * push, pop / unshift, shift
  * unshift and shift are much slower than push, pop, since they need to re-arrange the whole list from the start
  */
 users.push('Jane'); // add from the end
@@ -56,6 +56,7 @@ users.shift(); // remove from the start
  */
 const users_2 = ['user1', 'user2', 'user3'];
 const combinedUsers = users.concat(users_2);
+console.log(combinedUsers); // ["Wes", "Flora", "Apple", "Mango", "Flora", "Casey", "user1", "user2", "user3"]
 
 /**
  * Searching through an array
