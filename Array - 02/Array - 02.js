@@ -170,8 +170,8 @@ const fillEmptyArray = new Array(3).fill('array');
 // 16. findIndex() : returns the index of the first element that pass a test
 // 17. some() : checks if any of the element pass a test
 // 18. every() : checks if every element pass a test
-// 19. filter() : returns a new array with element that pass a test
 
+// 19. filter() : returns a new array with element that pass a test
 // 20. map() : returns a new array with the result of callback function
 // 21. reduce() : returns the single value accumulated from an array, executes the callback for each value of an array, left to right
 // 22. reduceRight() : right to left
