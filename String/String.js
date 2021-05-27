@@ -50,7 +50,7 @@ console.log(two.match('ynd')); // ["ynd", index: 11, input: "searches: ynd, and,
 console.log(two.match(/[aey]nd/g)); // ["ynd", "and", "end", "end"]
 
 /**
- * Does it include / startWith / endsWith ? (true / false)
+ * Does it include / startsWith / endsWith ? (true / false)
  */
 // 09. includes()
 console.log(one.includes('foo')); // false
@@ -60,7 +60,7 @@ console.log(one.endsWith('methods')); // true
 console.log(one.endsWith('method')); // false
 console.log(one.endsWith('ds')); // true
 
-// 11. startWith()
+// 11. startsWith()
 console.log(one.startsWith('learning')); // true
 
 /**
