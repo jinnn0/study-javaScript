@@ -10,7 +10,7 @@
 * Hoisting refers to the JS behavior that the variables and named function "declarations"
   are moved to the top of their scope (but not the values assinged to it)
 
-* The "var" declarations are moved up to the top and automatically and set to "undefined"
+* The "var" declarations are moved up to the top and automatically set to "undefined"
 * Traditional named functions are moved up to the top of their scope therefore available anywere in your code
 
 * "let" / "const" variables and "class" are hoisted but remain unintialized
