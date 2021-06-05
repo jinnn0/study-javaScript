@@ -12,7 +12,7 @@
 * Array is indexed, so every item has a corresponding index we can retrieve elements using that index but,
 * Set is ordered by insertion order and sets do not support random access
 * For example, "give me the last item or the first item in the Set"
-* In addition, we can't reorder Set
+* In addition, we can't re-order Set
 
 * Practical Use case
 * To remove duplicate elements in an array
@@ -25,6 +25,13 @@ new Set();
 // 2. Create a Set with iterable object
 const newSet = new Set(['hello', 'there']);
 console.log(newSet); // Set(2) {"hello", "there"}
+
+const newSet = new Set('hello');
+console.log(newSet); // Set(4) {"h", "e", "l", "o"}
+
+const newSet = new Set({ one: 1, two: 2 });
+console.log(newSet); // Uncaught TypeError: object is not iterable
+
 
 // 3. Add
 newSet.add('new item'); // the value is added in its entirety
@@ -80,4 +87,4 @@ function getUniqueItem(array) {
   return set.values().next().value;
 }
 
-getUniqueItem(array);
+getUniqueItem(array); // 5
