@@ -21,6 +21,13 @@
   * Object.values()
   
 * "in" operator : check if the object has a certain property
+
+* Object as a data structure 
+ * Unordered key-value pairs of data
+ * Elements are accessed by key (property name)
+ * Not ireable ("for in" loop can retrieve the key but not the values)
+ * Key must be unique and either strings, numbers or symbols (array and object can not be used as a key)
+ * Object unlike other data structure can contain methods as well as storing data
 */
 
 /*
