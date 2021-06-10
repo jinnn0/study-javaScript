@@ -4,15 +4,15 @@
 * Sets are a collection of UNIQUE values
 
 * Set vs Array
-* Set is a data structure that allows you to store a collection of values
+* Set is a data structure that allows you to store a collection of unique values
 * Set often get confused with array because they are both a collection of data
 
-* Differences
-* There's an order to a Set but the order is nowhere near as important as it is to an array
-* Array is indexed, so every item has a corresponding index we can retrieve elements using that index but,
-* Set is ordered by insertion order and sets do not support random access
-* For example, "give me the last item or the first item in the Set"
-* In addition, we can't re-order Set
+* Set is unordered colletion thus insertion order is not maintained
+* Elements can be accessed via its methods
+* Duplicate values are not allowed 
+* Iterable (order is not guaranteed)
+* The size/length of the array is adjusted dynamically 
+* Deletion and finding elements are faster than regular array
 
 * Practical Use case
 * To remove duplicate elements in an array
