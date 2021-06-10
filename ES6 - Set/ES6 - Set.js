@@ -12,7 +12,7 @@
 * Duplicate values are not allowed 
 * Iterable (order is not guaranteed)
 * The size/length of the array is adjusted dynamically 
-* Deletion and finding elements are faster than regular array
+* Deletion and finding elements are faster than regular array since it Set doesn't go through every single elements 
 
 * Practical Use case
 * To remove duplicate elements in an array
