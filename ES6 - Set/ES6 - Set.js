@@ -48,7 +48,7 @@ newSet.delete('there');
 console.log(newSet); // Set(2) {"hello", "new item"}
 
 // 7. Delete the entire Set
-// newSet.clear();
+newSet.clear();
 console.log(newSet); // Set(0) {}
 
 // 8. Iterating Set
