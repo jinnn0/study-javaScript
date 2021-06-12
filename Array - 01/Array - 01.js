@@ -1,5 +1,12 @@
 /*
  * Array 01
+ 
+ * Array stores a list of data separated by comma 
+ * The insertion order is preserved
+ * Elements can be accessed by its index
+ * Duplicate values are allowed
+ * Iterable
+ * The size/length of the array is adjusted dynamically 
 
  * Declaration
  * Index position

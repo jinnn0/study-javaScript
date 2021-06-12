@@ -25,7 +25,7 @@ const song = {
 };
 
 for (key in song) {
-  console.log(key, song[key]);
+  console.log(key, song[key]); // title, artist, genre
 }
 
 /*
