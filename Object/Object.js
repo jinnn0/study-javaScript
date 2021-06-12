@@ -117,12 +117,26 @@ console.log(user['username']) // square bracket notation
 user.greeting()
 
 // Adding 
-const dataName = 'color'
-const dataValue = 'white'
+const d = {};
+const e = {};
 
-user.dataName = dataValue // dataName: "white", dot notation only accpets a literal property name
-user[dataName] = dataValue // color: "white", square bracket notation accepts JS expression
-user['color'] = 'pink'
+user.a = 'a'; // {a: "a"}
+// prettier-ignore
+user.b = () => {console.log('b');}; // {a: "a", b: ƒ}
+
+user['c'] = 'c'; // {a: "a", c: "c", b: ƒ}
+user[2021] = '2021'; // {2021: "2021", a: "a", c: "c", b: ƒ}
+user[true] = 'true'; // {2021: "2021", a: "a", c: "c", true: "true", b: ƒ}
+user[d] = 'd'; // {2021: "2021", a: "a", c: "c", true: "true", [object Object]: "d", b: ƒ}
+user[e] = 'e'; // {2021: "2021", a: "a", c: "c", true: "true", [object Object]: "e", b: ƒ}
+user[{}] = 'f'; // {2021: "2021", a: "a", c: "c", true: "true", [object Object]: "f", b: ƒ} => regular object only accept one key object
+
+const dataName = 'color';
+const dataValue = 'white';
+
+user.dataName = dataValue; // dataName: "white", dot notation only accpets a literal property name
+user[dataName] = dataValue; // color: "white", square bracket notation accepts JS expression
+
 
 // Updating 
 user.username = 'John'
