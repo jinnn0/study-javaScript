@@ -15,13 +15,25 @@
 
 // 01. Creating a class
 class Person {
+  // constructor function is the first code that gets executed when "new Person()" gets called
   constructor(name) {
     this.name = name;
   }
 }
 
 const Mike = new Person('Mike');
-console.log(Mike);
+console.log(Mike); // Person {name: "Mike"}
+
+// 02. Adding a method
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  
+  play() {
+   ...
+  }
+}
 
 // 02. Getter and setter to control access to an object
 class Comment {
