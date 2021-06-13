@@ -67,13 +67,13 @@ console.log(one.startsWith('learning')); // true
  * Extracting parts of the string
  */
 // 12. slice (startPos, endPos - not including) - returns a new string
-console.log(one.slice(1, 3)); // ear
+console.log(one.slice(1, 3)); // ea
 
 // 13. substr (startPos, number of characters to include) - returns a extracted string
 console.log(one.substr(1, 3)); // // ear
 
 // 14. substring (startPos, endPos) - returns a extracted string
-console.log(one.substring(1, 3)); // ear
+console.log(one.substring(1, 3)); // ea
 
 /**
  * Other methods
