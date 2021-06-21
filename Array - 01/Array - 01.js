@@ -89,7 +89,7 @@ console.log(users.join('//')); // Wes//Flora//Apple//Mango//Flora//Casey
 users.slice(1, 4); // start, end (not included)
 
 /**
- * 13. splice : changes the content of an original array
+ * 13. splice : changes the content of an original array // index, howmany, new item to be added
  */
 users.splice(2, 1);
 users.splice(2, 1, 'A', 'B'); // start, deleteCount, itemToAdd
