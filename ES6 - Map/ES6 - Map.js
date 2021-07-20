@@ -10,7 +10,7 @@
  * Key must be unique and can be any reference values like array, object, strings, numbers and symbols
 
  * Difference between Object and Map
-     * Map allows any values including object and array t0 be used as a key unlike object
+     * Map allows any values including object and array to be used as a key unlike object
      * Object only allows string or symbol
 
      * Map allows multiple unique objects
