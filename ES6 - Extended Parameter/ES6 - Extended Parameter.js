@@ -62,14 +62,14 @@ printList('param1', 'param2', 'one', 'two', 'three'); // args.length : 3, output
 //  printList('param1', 'param2', ['one', 'two', 'three']) // ...args.length : 1, output : ['one', 'two', 'three']
 
 const sum = (...args) => {
-  return args.reduce((a, b) => a + b, 0); // one, two, three
+  return args.reduce((a, b) => a + b, 0); 
 };
 
 /**
  * Rest parameters / Spread Operator - ES6
  */
 function printList(param1, param2, ...args) {
-  args.forEach((arg) => console.log(arg));
+  args.forEach((arg) => console.log(arg)); // one, two, three
 }
 
 const args = ['one', 'two', 'three'];
