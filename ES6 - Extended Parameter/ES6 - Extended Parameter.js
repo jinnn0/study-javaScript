@@ -62,7 +62,7 @@ printList('param1', 'param2', 'one', 'two', 'three'); // args.length : 3, output
 //  printList('param1', 'param2', ['one', 'two', 'three']) // ...args.length : 1, output : ['one', 'two', 'three']
 
 const sum = (...args) => {
-  return args.reduce((a, b) => a + b, 0);
+  return args.reduce((a, b) => a + b, 0); // one, two, three
 };
 
 /**
